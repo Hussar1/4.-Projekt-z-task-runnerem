@@ -1,0 +1,30 @@
+/* Variables */
+/* Global */
+/* Navigation */
+.navigation ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  body {
+    text-align: center;
+  }
+  .navigation ul {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .navigation li {
+    padding: 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

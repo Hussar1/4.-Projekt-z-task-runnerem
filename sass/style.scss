@@ -1,0 +1,32 @@
+/* Variables */
+
+/* Global */
+
+/* Navigation */
+
+.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+
+.navigation a {
+    text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    body {
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+    
+    .navigation li {
+        padding: 10px 0;
+    }
+}
+
