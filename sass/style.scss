@@ -3,7 +3,7 @@ $text-font-title: 'Roboto', sans-serif;
 $text-font-subtitle: 'Noticia Text', serif;
 $color-white: #fff;
 
-@mixin font-two-italic {
+@mixin font-subtitle-italic {
     font-family: $text-font-subtitle;
     font-style: italic;
 }
@@ -14,6 +14,25 @@ body {
     margin: 0;
     font-family: $text-font-subtitle;
     text-align: center;
+}
+
+section {
+    padding: 108px 0;
+  }
+
+.section-title {
+    font-family: $text-font-title;
+    font-size: 36px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.section-subtitle {
+    @include font-subtitle-italic();
+    font-size: 16px;
+    font-weight: 400;
+    margin-block-start: 10px;
+    color: grey;
 }
 
 /* Navigation */
@@ -51,6 +70,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
+    padding: 0 0 108px 0;
 }
 
 .splash-content {
@@ -59,7 +79,7 @@ body {
 }
 
 .splash-subtitle {
-    @include font-two-italic();
+    @include font-subtitle-italic();
     font-size: 40px;
     margin-top: 170px;
     font-weight: 100;
@@ -82,6 +102,27 @@ body {
     color: $color-white;
     padding: 20px 60px;
     letter-spacing: 2px;
+}
+
+/* Services */
+.services h4 {
+    font-family: $text-font-title;
+}
+
+.services p {
+    font-size: 14px;
+    margin: 0 20px;
+    color: grey;
+}
+
+.services img {
+    background-color: $color-white;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    padding: 10px;
+    width: 68px;
+    height: 68px;
+    margin-top: 50px;
 }
 
 /* Media */
